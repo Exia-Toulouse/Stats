@@ -18,9 +18,7 @@ achapeau=sum(prodxy)/sum(prodxx);
 bchapeau=ybarre-achapeau*xbarre
 function y=f(x);y=achapeau*x+bchapeau;endfunction
 fplot2d(min(agri)-10:.1:max(agri)+10,f)
-pause
 
-disp("???");
 a2chapeau=sum(prodxy)/sum(prodyy);
 b2chapeau=xbarre-a2chapeau*ybarre
 function y=g(x);y=(x-b2chapeau)/a2chapeau;endfunction
